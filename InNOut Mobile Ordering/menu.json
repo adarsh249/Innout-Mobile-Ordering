@@ -1,0 +1,92 @@
+{
+    "sections":[
+        {
+            "id": "9F682AEE-BD44-4943-9529-1C633F7083BD",
+            "name": "Burgers",
+            "items": [
+                {
+                    "id": "82C8783C-2FBE-11ED-A261-0242AC120002",
+                    "name": "Double-Double",
+                    "price": 4.45,
+                    "restrictions": [],
+                    "description": "Two 100% American beef patties without additives, fillers or preservatives combined with 2 slices of American cheese, freshly sliced or grilled onions, fresh, cripsy and hand-leafed lettuce, a slice from the plumpest tomato and our own recipe of spread from 1948 sandwiched between a pair of freshly baked toasted buns made with old-fashioned, slow-rising sponge dough."
+                    
+                },
+                {
+                    "id": "96AE0C90-2FBE-11ED-A261-0242AC120002",
+                    "name": "Hamburger",
+                    "price": 2.80,
+                    "restrictions": [],
+                    "description": "One 100% American beef patty without additives, fillers or preservatives combined with freshly sliced or grilled onions, fresh, cripsy and hand-leafed lettuce, a slice from the plumpest tomato and our own recipe of spread from 1948 sandwiched between a pair of freshly baked toasted buns made with old-fashioned, slow-rising sponge dough."
+                },
+                {
+                    "id": "A9F8628C-2FBE-11ED-A261-0242AC120002",
+                    "name": "Cheeseburger",
+                    "price": 3.10,
+                    "restrictions": [],
+                    "description": "One 100% American beef patties without additives, fillers or preservatives combined with 1 slice of American cheese, freshly sliced or grilled onions, fresh, cripsy and hand-leafed lettuce, a slice from the plumpest tomato and our own recipe of spread from 1948 sandwiched between a pair of freshly baked toasted buns made with old-fashioned, slow-rising sponge dough."
+                }
+            ]
+        },
+        {
+            "id": "BF0C74F6-2FBE-11ED-A261-0242AC120002",
+            "name": "French Fries",
+            "items":[
+                {
+                    "id": "DA9C1262-2FBE-11ED-A261-0242AC120002",
+                    "name": "French Fries",
+                    "price": 2,
+                    "restrictions": ["V"],
+                    "description": "Fresh, hand-cut potatoes prepared in 100% sunflower oil."
+                }
+            ]
+        },
+        {
+            "id": "F09983B0-2FBE-11ED-A261-0242AC120002",
+            "name": "Drinks",
+            "items": [
+                {
+                    "id": "0AD2B738-2FBF-11ED-A261-0242AC120002",
+                    "name": "Fountain Drinks",
+                    "price": 1.75,
+                    "restrictions": [],
+                    "description": "Refreshing fountain drink with small, medium, large, and extra large sizes."
+                },
+                {
+                    "id": "C4649F7C-2FBF-11ED-A261-0242AC120002",
+                    "name": "Shakes",
+                    "price": 2.60,
+                    "restrictions": ["D"],
+                    "description": "Delicious shake made with real ice cream."
+                }
+            ]
+        },
+        {
+            "id": "0F71D94E-2FC0-11ED-A261-0242AC120002",
+            "name": "Not So Secret Menu",
+            "items": [
+                {
+                    "id": "418AE538-2FC0-11ED-A261-0242AC120002",
+                    "name": "3x3",
+                    "price": 6.65,
+                    "restrictions": [],
+                    "description": "Our 3x3 or Triple Triple has three 100% American patties, hand-leafed lettuce, tomato, spread, three slices of American cheese, with or without onions, stacked high on a freshly baked bun."
+                },
+                {
+                    "id": "4EDB89C2-2FC0-11ED-A261-0242AC120002",
+                    "name": "4x4",
+                    "price": 8.85,
+                    "restrictions": [],
+                    "description": "Our 4x4 or Quad Quad has four 100% American patties, hand-leafed lettuce, tomato, spread, four slices of American cheese, with or without onions, stacked high on a freshly baked bun."
+                },
+                {
+                    "id": "5B9AF288-2FC0-11ED-A261-0242AC120002",
+                    "name": "Grilled Cheese",
+                    "price": 2.10,
+                    "restrictions": ["V"],
+                    "description": "Two slices of melted American cheese, hand-leafed lettuce, tomato, spread, with or without onions on a freshly banked bun."
+                }
+            ]
+        }
+    ]
+}
