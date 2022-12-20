@@ -24,6 +24,7 @@
 		BBC7A60F28CBDC0E000A40E5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A60E28CBDC0E000A40E5 /* Item.swift */; };
 		BBC7A61128CBDE42000A40E5 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A61028CBDE42000A40E5 /* MenuSection.swift */; };
 		BBC7A61328CBDEA8000A40E5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A61228CBDEA8000A40E5 /* Menu.swift */; };
+		BBE6577B2951334F00F42BAD /* OrderTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6577A2951334F00F42BAD /* OrderTrackerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		BBC7A60E28CBDC0E000A40E5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BBC7A61028CBDE42000A40E5 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		BBC7A61228CBDEA8000A40E5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		BBE6577A2951334F00F42BAD /* OrderTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTrackerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				BB49653F28CD4FFD00906C0D /* DestinationView.swift */,
 				BB49653728CC282400906C0D /* AddToOrderButtonStyle.swift */,
 				BB49653528CC246700906C0D /* Order.swift */,
+				BBE6577A2951334F00F42BAD /* OrderTrackerView.swift */,
 				BB49653128CBEF7100906C0D /* ItemRow.swift */,
 				BB49652F28CBE0AB00906C0D /* MenuView.swift */,
 				BBC7A5F828CAEA16000A40E5 /* menu.json */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */,
+				BBE6577B2951334F00F42BAD /* OrderTrackerView.swift in Sources */,
 				BB49654028CD4FFD00906C0D /* DestinationView.swift in Sources */,
 				BB49653C28CC2BD800906C0D /* MainView.swift in Sources */,
 				BB49653828CC282400906C0D /* AddToOrderButtonStyle.swift in Sources */,
@@ -319,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InNOut Mobile Ordering/Preview Content\"";
+				DEVELOPMENT_TEAM = YVTQ9B4JLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -347,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InNOut Mobile Ordering/Preview Content\"";
+				DEVELOPMENT_TEAM = YVTQ9B4JLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
