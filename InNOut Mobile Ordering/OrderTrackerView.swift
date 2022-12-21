@@ -2,46 +2,61 @@
 //  OrderTrackerView.swift
 //  InNOut Mobile Ordering
 //
-//  Created by Adarsh Patel on 12/19/22.
+//  Created by Adarsh Patel on 12/20/22.
 //
 
 import SwiftUI
-import CoreLocation
 import MapKit
+import UIKit
+import CoreLocation
 
-struct OrderTrackerView: View {
-    var body: some View {
-        class ViewController: UIViewController, CLLocationManagerDelegate {
-            let locationManager = CLLocationManager()
-            let mapView = MKMapView()
-            
-            locationManager.delegate = self
-            locationManager.requestWhenInUseAuthorization()
-            
-            func locationManager(_manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-                if status == .authorizedWhenInUse {
-                    locationManager.startUpdatingLocation()
-                }
-            }
-            
-            func locationManager(_manager: CLLocationManager, didUpdateLocations: [CLLocation]) {
-                if let location = locations.first {
-                    let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-                    let region = MKCoordinateRegion(center: location.coordinate, span: span)
-                    mapView.setRegion(region, animated: true)
-                    let annotation = MKPointAnnotation()
-                    annotation.coordinate = location.coordinate
-                    mapView.addAnnotation(annotation)
-                }
-            }
-            addSubview(mapView)
-        }
-
+class ViewController: UIViewController, CLLocationManagerDelegate {
+    @IBOutlet weak var mapView: MKMapView!
+    let locationManager = CLLocationManager()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //enable user locatoin tracking and center the map on user's location
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .follow
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
     }
-}
-
-struct OrderTrackerView_Previews: PreviewProvider {
-    static var previews: some View {
-        OrderTrackerView()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //request location access when the view appears
+        locationManager.requestWhenInUseAuthorization()
+    }
+    @IBAction func placeOrderButtonTapped(_ sender: Any) {
+        mapView.frame = view.bounds
+        mapView.translatesAutoresizingMaskIntoConstraints = true
+        view.addSubview(mapView)
+    }
+    
+    @IBAction func closeMapButtonTapped(_ sender: Any) {
+        mapView.removeFromSuperview()
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        let accuracyAuthorization = manager.accuracyAuthorization
+        
+        switch accuracyAuthorization {
+        case .fullAccuracy:
+            break
+        case .reducedAccuracy:
+            manager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: "For Delivery")
+            break
+        default:
+            break
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //get latest location
+        guard let location = locations.last else {return}
+        
+        let region = MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        mapView.setRegion(region, animated: true)
     }
 }

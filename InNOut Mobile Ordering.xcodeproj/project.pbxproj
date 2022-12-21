@@ -24,7 +24,10 @@
 		BBC7A60F28CBDC0E000A40E5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A60E28CBDC0E000A40E5 /* Item.swift */; };
 		BBC7A61128CBDE42000A40E5 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A61028CBDE42000A40E5 /* MenuSection.swift */; };
 		BBC7A61328CBDEA8000A40E5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A61228CBDEA8000A40E5 /* Menu.swift */; };
-		BBE6577B2951334F00F42BAD /* OrderTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6577A2951334F00F42BAD /* OrderTrackerView.swift */; };
+		BBE657802952717F00F42BAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6577F2952717F00F42BAD /* MapKit.framework */; };
+		BBE657842952750100F42BAD /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE657832952750000F42BAD /* MapView.storyboard */; };
+		BBE65788295277FD00F42BAD /* OrderTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65787295277FD00F42BAD /* OrderTrackerView.swift */; };
+		BBE6578A29527D0000F42BAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6578929527D0000F42BAD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +49,11 @@
 		BBC7A60E28CBDC0E000A40E5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BBC7A61028CBDE42000A40E5 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		BBC7A61228CBDEA8000A40E5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		BBE6577A2951334F00F42BAD /* OrderTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTrackerView.swift; sourceTree = "<group>"; };
+		BBE6577F2952717F00F42BAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BBE657832952750000F42BAD /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		BBE65787295277FD00F42BAD /* OrderTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTrackerView.swift; sourceTree = "<group>"; };
+		BBE6578929527D0000F42BAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BBE6578B295285AD00F42BAD /* InNOut-Mobile-Ordering-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "InNOut-Mobile-Ordering-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE6578A29527D0000F42BAD /* CoreLocation.framework in Frameworks */,
+				BBE657802952717F00F42BAD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,7 @@
 			children = (
 				BBC7A5D328CA969B000A40E5 /* InNOut Mobile Ordering */,
 				BBC7A5D228CA969B000A40E5 /* Products */,
+				BBE6577E2952717F00F42BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +89,7 @@
 		BBC7A5D328CA969B000A40E5 /* InNOut Mobile Ordering */ = {
 			isa = PBXGroup;
 			children = (
+				BBE6578B295285AD00F42BAD /* InNOut-Mobile-Ordering-Info.plist */,
 				BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */,
 				BBC7A60E28CBDC0E000A40E5 /* Item.swift */,
 				BBC7A61028CBDE42000A40E5 /* MenuSection.swift */,
@@ -90,9 +101,10 @@
 				BB49653D28CC2D0100906C0D /* CheckoutView.swift */,
 				BB49653F28CD4FFD00906C0D /* DestinationView.swift */,
 				BB49653728CC282400906C0D /* AddToOrderButtonStyle.swift */,
+				BBE657832952750000F42BAD /* MapView.storyboard */,
 				BB49653528CC246700906C0D /* Order.swift */,
-				BBE6577A2951334F00F42BAD /* OrderTrackerView.swift */,
 				BB49653128CBEF7100906C0D /* ItemRow.swift */,
+				BBE65787295277FD00F42BAD /* OrderTrackerView.swift */,
 				BB49652F28CBE0AB00906C0D /* MenuView.swift */,
 				BBC7A5F828CAEA16000A40E5 /* menu.json */,
 				BBC7A5D828CA969D000A40E5 /* Assets.xcassets */,
@@ -107,6 +119,15 @@
 				BBC7A5DB28CA969D000A40E5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBE6577E2952717F00F42BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE6578929527D0000F42BAD /* CoreLocation.framework */,
+				BBE6577F2952717F00F42BAD /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +190,7 @@
 			files = (
 				BBC7A5DC28CA969D000A40E5 /* Preview Assets.xcassets in Resources */,
 				BBC7A5F928CAEA16000A40E5 /* menu.json in Resources */,
+				BBE657842952750100F42BAD /* MapView.storyboard in Resources */,
 				BBC7A5D928CA969D000A40E5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */,
-				BBE6577B2951334F00F42BAD /* OrderTrackerView.swift in Sources */,
+				BBE65788295277FD00F42BAD /* OrderTrackerView.swift in Sources */,
 				BB49654028CD4FFD00906C0D /* DestinationView.swift in Sources */,
 				BB49653C28CC2BD800906C0D /* MainView.swift in Sources */,
 				BB49653828CC282400906C0D /* AddToOrderButtonStyle.swift in Sources */,
@@ -326,6 +348,9 @@
 				DEVELOPMENT_TEAM = YVTQ9B4JLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "InNOut-Mobile-Ordering-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +380,9 @@
 				DEVELOPMENT_TEAM = YVTQ9B4JLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "InNOut-Mobile-Ordering-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
