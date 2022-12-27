@@ -16,6 +16,7 @@
 		BB49653C28CC2BD800906C0D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653B28CC2BD800906C0D /* MainView.swift */; };
 		BB49653E28CC2D0100906C0D /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653D28CC2D0100906C0D /* CheckoutView.swift */; };
 		BB49654028CD4FFD00906C0D /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653F28CD4FFD00906C0D /* DestinationView.swift */; };
+		BBB5ACD2295A93A500D4D86A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5ACD1295A93A500D4D86A /* MapView.swift */; };
 		BBC7A5D528CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */; };
 		BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D628CA969B000A40E5 /* ContentView.swift */; };
 		BBC7A5D928CA969D000A40E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC7A5D828CA969D000A40E5 /* Assets.xcassets */; };
@@ -25,8 +26,6 @@
 		BBC7A61128CBDE42000A40E5 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A61028CBDE42000A40E5 /* MenuSection.swift */; };
 		BBC7A61328CBDEA8000A40E5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A61228CBDEA8000A40E5 /* Menu.swift */; };
 		BBE657802952717F00F42BAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6577F2952717F00F42BAD /* MapKit.framework */; };
-		BBE657842952750100F42BAD /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE657832952750000F42BAD /* MapView.storyboard */; };
-		BBE65788295277FD00F42BAD /* OrderTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65787295277FD00F42BAD /* OrderTrackerView.swift */; };
 		BBE6578A29527D0000F42BAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6578929527D0000F42BAD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +39,7 @@
 		BB49653B28CC2BD800906C0D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BB49653D28CC2D0100906C0D /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		BB49653F28CD4FFD00906C0D /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		BBB5ACD1295A93A500D4D86A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BBC7A5D128CA969B000A40E5 /* InNOut Mobile Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InNOut Mobile Ordering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InNOut_Mobile_OrderingApp.swift; sourceTree = "<group>"; };
 		BBC7A5D628CA969B000A40E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,8 +50,6 @@
 		BBC7A61028CBDE42000A40E5 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		BBC7A61228CBDEA8000A40E5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		BBE6577F2952717F00F42BAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		BBE657832952750000F42BAD /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
-		BBE65787295277FD00F42BAD /* OrderTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTrackerView.swift; sourceTree = "<group>"; };
 		BBE6578929527D0000F42BAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BBE6578B295285AD00F42BAD /* InNOut-Mobile-Ordering-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "InNOut-Mobile-Ordering-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -95,16 +93,15 @@
 				BBC7A61028CBDE42000A40E5 /* MenuSection.swift */,
 				BBC7A61228CBDEA8000A40E5 /* Menu.swift */,
 				BBC7A5D628CA969B000A40E5 /* ContentView.swift */,
+				BBB5ACD1295A93A500D4D86A /* MapView.swift */,
 				BB49653328CC205500906C0D /* ItemDetail.swift */,
 				BB49653B28CC2BD800906C0D /* MainView.swift */,
 				BB49653928CC294200906C0D /* OrderView.swift */,
 				BB49653D28CC2D0100906C0D /* CheckoutView.swift */,
 				BB49653F28CD4FFD00906C0D /* DestinationView.swift */,
 				BB49653728CC282400906C0D /* AddToOrderButtonStyle.swift */,
-				BBE657832952750000F42BAD /* MapView.storyboard */,
 				BB49653528CC246700906C0D /* Order.swift */,
 				BB49653128CBEF7100906C0D /* ItemRow.swift */,
-				BBE65787295277FD00F42BAD /* OrderTrackerView.swift */,
 				BB49652F28CBE0AB00906C0D /* MenuView.swift */,
 				BBC7A5F828CAEA16000A40E5 /* menu.json */,
 				BBC7A5D828CA969D000A40E5 /* Assets.xcassets */,
@@ -190,7 +187,6 @@
 			files = (
 				BBC7A5DC28CA969D000A40E5 /* Preview Assets.xcassets in Resources */,
 				BBC7A5F928CAEA16000A40E5 /* menu.json in Resources */,
-				BBE657842952750100F42BAD /* MapView.storyboard in Resources */,
 				BBC7A5D928CA969D000A40E5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,13 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */,
-				BBE65788295277FD00F42BAD /* OrderTrackerView.swift in Sources */,
 				BB49654028CD4FFD00906C0D /* DestinationView.swift in Sources */,
 				BB49653C28CC2BD800906C0D /* MainView.swift in Sources */,
 				BB49653828CC282400906C0D /* AddToOrderButtonStyle.swift in Sources */,
 				BB49653028CBE0AB00906C0D /* MenuView.swift in Sources */,
 				BBC7A60F28CBDC0E000A40E5 /* Item.swift in Sources */,
 				BB49653628CC246700906C0D /* Order.swift in Sources */,
+				BBB5ACD2295A93A500D4D86A /* MapView.swift in Sources */,
 				BB49653228CBEF7100906C0D /* ItemRow.swift in Sources */,
 				BB49653E28CC2D0100906C0D /* CheckoutView.swift in Sources */,
 				BBC7A61128CBDE42000A40E5 /* MenuSection.swift in Sources */,

@@ -25,6 +25,10 @@ struct DestinationView: View {
                 Spacer()
             }
             Spacer()
+            NavigationLink(destination: MapView()){
+                Text("Track Order")
+            }
+            .buttonStyle(AddToOrderButtonStyle())
         }
         .background(Color(UIColor(named: "Logo Color")!).edgesIgnoringSafeArea(.all))
     }
