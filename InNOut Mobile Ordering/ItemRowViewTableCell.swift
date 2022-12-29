@@ -4,8 +4,8 @@
 //
 //  Created by Adarsh Patel on 9/9/22.
 //
-
-import SwiftUI
+/* SwiftUI Code
+ import SwiftUI
 
 struct ItemRow: View {
     let item: Item
@@ -31,9 +31,22 @@ struct ItemRow: View {
         }
     }
 }
+*/
 
-struct ItemRow_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemRow(item: Item.example)
+import UIKit
+
+class ItemRowViewTableCell: UITableViewCell {
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    //add line for colors eventually
+    
+    func configure(with item: Item) {
+        thumbnailImageView.image = UIImage(named: item.thumbmailImage)
+        nameLabel.text = item.name
+        priceLabel.text = "$\(item.price)"
+        
+        //add restriction code as well, later
     }
 }

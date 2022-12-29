@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB49653028CBE0AB00906C0D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49652F28CBE0AB00906C0D /* MenuView.swift */; };
-		BB49653228CBEF7100906C0D /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653128CBEF7100906C0D /* ItemRow.swift */; };
+		BB49653228CBEF7100906C0D /* ItemRowViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653128CBEF7100906C0D /* ItemRowViewTableCell.swift */; };
 		BB49653428CC205500906C0D /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653328CC205500906C0D /* ItemDetail.swift */; };
 		BB49653628CC246700906C0D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653528CC246700906C0D /* Order.swift */; };
 		BB49653828CC282400906C0D /* AddToOrderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653728CC282400906C0D /* AddToOrderButtonStyle.swift */; };
@@ -19,7 +19,7 @@
 		BBB5ACD2295A93A500D4D86A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5ACD1295A93A500D4D86A /* MapView.swift */; };
 		BBB5ACD4295BDC5600D4D86A /* TempMenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB5ACD3295BDC5600D4D86A /* TempMenuView.storyboard */; };
 		BBC7A5D528CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */; };
-		BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D628CA969B000A40E5 /* ContentView.swift */; };
+		BBC7A5D728CA969B000A40E5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D628CA969B000A40E5 /* MenuController.swift */; };
 		BBC7A5D928CA969D000A40E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC7A5D828CA969D000A40E5 /* Assets.xcassets */; };
 		BBC7A5DC28CA969D000A40E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC7A5DB28CA969D000A40E5 /* Preview Assets.xcassets */; };
 		BBC7A5F928CAEA16000A40E5 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = BBC7A5F828CAEA16000A40E5 /* menu.json */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		BB49652F28CBE0AB00906C0D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		BB49653128CBEF7100906C0D /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		BB49653128CBEF7100906C0D /* ItemRowViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewTableCell.swift; sourceTree = "<group>"; };
 		BB49653328CC205500906C0D /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		BB49653528CC246700906C0D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		BB49653728CC282400906C0D /* AddToOrderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderButtonStyle.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		BBB5ACD3295BDC5600D4D86A /* TempMenuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TempMenuView.storyboard; sourceTree = "<group>"; };
 		BBC7A5D128CA969B000A40E5 /* InNOut Mobile Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InNOut Mobile Ordering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InNOut_Mobile_OrderingApp.swift; sourceTree = "<group>"; };
-		BBC7A5D628CA969B000A40E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBC7A5D628CA969B000A40E5 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		BBC7A5D828CA969D000A40E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC7A5DB28CA969D000A40E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBC7A5F828CAEA16000A40E5 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				BBC7A60E28CBDC0E000A40E5 /* Item.swift */,
 				BBC7A61028CBDE42000A40E5 /* MenuSection.swift */,
 				BBC7A61228CBDEA8000A40E5 /* Menu.swift */,
-				BBC7A5D628CA969B000A40E5 /* ContentView.swift */,
+				BBC7A5D628CA969B000A40E5 /* MenuController.swift */,
 				BBB5ACD1295A93A500D4D86A /* MapView.swift */,
 				BB49653328CC205500906C0D /* ItemDetail.swift */,
 				BB49653B28CC2BD800906C0D /* MainView.swift */,
@@ -104,7 +104,7 @@
 				BB49653F28CD4FFD00906C0D /* DestinationView.swift */,
 				BB49653728CC282400906C0D /* AddToOrderButtonStyle.swift */,
 				BB49653528CC246700906C0D /* Order.swift */,
-				BB49653128CBEF7100906C0D /* ItemRow.swift */,
+				BB49653128CBEF7100906C0D /* ItemRowViewTableCell.swift */,
 				BB49652F28CBE0AB00906C0D /* MenuView.swift */,
 				BBC7A5F828CAEA16000A40E5 /* menu.json */,
 				BBC7A5D828CA969D000A40E5 /* Assets.xcassets */,
@@ -202,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */,
+				BBC7A5D728CA969B000A40E5 /* MenuController.swift in Sources */,
 				BB49654028CD4FFD00906C0D /* DestinationView.swift in Sources */,
 				BB49653C28CC2BD800906C0D /* MainView.swift in Sources */,
 				BB49653828CC282400906C0D /* AddToOrderButtonStyle.swift in Sources */,
@@ -210,7 +210,7 @@
 				BBC7A60F28CBDC0E000A40E5 /* Item.swift in Sources */,
 				BB49653628CC246700906C0D /* Order.swift in Sources */,
 				BBB5ACD2295A93A500D4D86A /* MapView.swift in Sources */,
-				BB49653228CBEF7100906C0D /* ItemRow.swift in Sources */,
+				BB49653228CBEF7100906C0D /* ItemRowViewTableCell.swift in Sources */,
 				BB49653E28CC2D0100906C0D /* CheckoutView.swift in Sources */,
 				BBC7A61128CBDE42000A40E5 /* MenuSection.swift in Sources */,
 				BB49653428CC205500906C0D /* ItemDetail.swift in Sources */,

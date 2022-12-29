@@ -26,6 +26,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="umR-ZS-BRm"/>
             </objects>
             <point key="canvasLocation" x="135.38461538461539" y="114.45497630331754"/>
         </scene>
