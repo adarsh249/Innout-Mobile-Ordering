@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @StateObject var menu = Menu()
@@ -24,13 +25,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Menu")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

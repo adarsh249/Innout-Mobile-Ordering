@@ -60,33 +60,6 @@
                     "description": "Delicious shake made with real ice cream."
                 }
             ]
-        },
-        {
-            "id": "0F71D94E-2FC0-11ED-A261-0242AC120002",
-            "name": "Not So Secret Menu",
-            "items": [
-                {
-                    "id": "418AE538-2FC0-11ED-A261-0242AC120002",
-                    "name": "3x3",
-                    "price": 6.65,
-                    "restrictions": [],
-                    "description": "Our 3x3 or Triple Triple has three 100% American patties, hand-leafed lettuce, tomato, spread, three slices of American cheese, with or without onions, stacked high on a freshly baked bun."
-                },
-                {
-                    "id": "4EDB89C2-2FC0-11ED-A261-0242AC120002",
-                    "name": "4x4",
-                    "price": 8.85,
-                    "restrictions": [],
-                    "description": "Our 4x4 or Quad Quad has four 100% American patties, hand-leafed lettuce, tomato, spread, four slices of American cheese, with or without onions, stacked high on a freshly baked bun."
-                },
-                {
-                    "id": "5B9AF288-2FC0-11ED-A261-0242AC120002",
-                    "name": "Grilled Cheese",
-                    "price": 2.10,
-                    "restrictions": ["V"],
-                    "description": "Two slices of melted American cheese, hand-leafed lettuce, tomato, spread, with or without onions on a freshly banked bun."
-                }
-            ]
         }
     ]
 }

@@ -17,6 +17,7 @@
 		BB49653E28CC2D0100906C0D /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653D28CC2D0100906C0D /* CheckoutView.swift */; };
 		BB49654028CD4FFD00906C0D /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49653F28CD4FFD00906C0D /* DestinationView.swift */; };
 		BBB5ACD2295A93A500D4D86A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5ACD1295A93A500D4D86A /* MapView.swift */; };
+		BBB5ACD4295BDC5600D4D86A /* TempMenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB5ACD3295BDC5600D4D86A /* TempMenuView.storyboard */; };
 		BBC7A5D528CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */; };
 		BBC7A5D728CA969B000A40E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5D628CA969B000A40E5 /* ContentView.swift */; };
 		BBC7A5D928CA969D000A40E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC7A5D828CA969D000A40E5 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		BB49653D28CC2D0100906C0D /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		BB49653F28CD4FFD00906C0D /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		BBB5ACD1295A93A500D4D86A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BBB5ACD3295BDC5600D4D86A /* TempMenuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TempMenuView.storyboard; sourceTree = "<group>"; };
 		BBC7A5D128CA969B000A40E5 /* InNOut Mobile Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InNOut Mobile Ordering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InNOut_Mobile_OrderingApp.swift; sourceTree = "<group>"; };
 		BBC7A5D628CA969B000A40E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				BBE6578B295285AD00F42BAD /* InNOut-Mobile-Ordering-Info.plist */,
 				BBC7A5D428CA969B000A40E5 /* InNOut_Mobile_OrderingApp.swift */,
+				BBB5ACD3295BDC5600D4D86A /* TempMenuView.storyboard */,
 				BBC7A60E28CBDC0E000A40E5 /* Item.swift */,
 				BBC7A61028CBDE42000A40E5 /* MenuSection.swift */,
 				BBC7A61228CBDEA8000A40E5 /* Menu.swift */,
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB5ACD4295BDC5600D4D86A /* TempMenuView.storyboard in Resources */,
 				BBC7A5DC28CA969D000A40E5 /* Preview Assets.xcassets in Resources */,
 				BBC7A5F928CAEA16000A40E5 /* menu.json in Resources */,
 				BBC7A5D928CA969D000A40E5 /* Assets.xcassets in Resources */,
